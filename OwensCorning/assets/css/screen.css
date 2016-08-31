@@ -35,6 +35,12 @@ q:before, q:after, blockquote:before, blockquote:after {
 
 a img {
   border: none;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
@@ -317,17 +323,17 @@ input[type="checkbox"]:focus {
   opacity: 0;
   pointer-events: none;
   /*&::after {
-  	/* gradient overlay at bottom of modal window 
-  	content: '';
-  	position: absolute;
-  	left: 0;
-  	bottom: 0;
-  	width: 100%;
-  	height: 60px;
-  	pointer-events: none;
-  	background: transparent;
-  	//background:#444;
-  	//@include background(linear-gradient(to top,rgba($color-1, 1), rgba($color-1, 0)));
+    /* gradient overlay at bottom of modal window 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    pointer-events: none;
+    background: transparent;
+    //background:#444;
+    //@include background(linear-gradient(to top,rgba($color-1, 1), rgba($color-1, 0)));
   } */
 }
 .cd-modal .cd-modal-content {
@@ -387,19 +393,19 @@ input[type="checkbox"]:focus {
   background: none;
 }
 .cd-modal-action .btn {
-  width: 12.5em;
+  width: 17em;
   border-radius: 5em;
   color: #fff;
   line-height: 4em;
-  padding-left: 1.5em;
+  padding-left: 1em;
   font-size: 18px;
   letter-spacing: 1px;
   white-space: nowrap;
   background-color: #8741c4;
-  background-image: url(../images/popup.svg);
-  background-size: 25px auto;
+  background-image: url(../images/ic_play_circle_outline_white_48px.svg);
+  background-size: 45px auto;
   background-repeat: no-repeat;
-  background-position: 16% 50%;
+  background-position: 12% 50%;
   text-transform: uppercase;
   -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
   -o-transition: color 0.2s 0.3s, width 0.3s 0s;
@@ -450,7 +456,7 @@ input[type="checkbox"]:focus {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background: rgba(135, 65, 196, 0.5) url(../images/cd-icon-close.svg) no-repeat center center;
+  background: rgba(23, 197, 157, 0.5) url(../images/cd-icon-close.svg) no-repeat center center;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
@@ -526,31 +532,89 @@ input[type="checkbox"]:focus {
   box-sizing: border-box;
   display: inline;
   float: left;
-  width: 58.3333333%;
+  width: 21%;
   padding: 0 20px;
   height: 100vh;
   background: #eee;
   display: table;
+  border-left:5px solid #fff;
 }
 
 .play {
-  margin-top: 42%;
+  margin-top: 120%;
   margin-left: 40%;
   display: inline-block;
+
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .play img {
   display: block;
   margin: 0 auto;
-  height: 150px;
-  width: 150px;
+  height: 110px;
+  width: 110px;
+
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.playcc {
+  margin-top: 110%;
+  margin-left: 44%;
+  display: inline-block;
+
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.playcc img {
+  display: block;
+  margin: 0 auto;
+  height: 60px;
+  width: 60px;
+
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .bg {
-  background-image: url();
+  background-image: url(../images/invention-bg.jpg);
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color:#666;
+}
+
+.bg2 {
+  background-image: url(../images/early-bg.jpg);
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color:#999;
+}
+
+.bg3 {
+  background-image: url(../images/fiber-bg.jpg);
   background-size: auto 110%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-color:#555;
+  background-color:#888;
 }
 
 .video-info {
@@ -559,7 +623,7 @@ input[type="checkbox"]:focus {
   box-sizing: border-box;
   display: inline;
   float: left;
-  width: 36.6666667%;
+  width: 32%;
   padding: 0 20px;
   -moz-box-shadow: inset 6px 0px 20px -4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 6px 0px 20px -4px rgba(0, 0, 0, 0.4);
@@ -570,9 +634,10 @@ input[type="checkbox"]:focus {
 }
 .video-info .title {
   display: block;
-  height: 600px;
-  background-image: url(../images/works-kiosk-ui-owens.png);
-  background-size: 115% auto;
+  height: 300px;
+  margin-top:200px;
+  background-image: url(../images/works-kiosk-ui-owens-2.png);
+  background-size: 100% auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
